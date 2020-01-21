@@ -19,12 +19,9 @@ def help
 end
 
 def list(songs)
-  new_array = []
   songs.each_with_index {|song, index|
-    new_array.push("#{index + 1}. " + song)
+    puts "#{index + 1}. " + song
   }
-  new_list = new_array.join("\n")
-  puts new_list
 end
 
 def play(songs)
