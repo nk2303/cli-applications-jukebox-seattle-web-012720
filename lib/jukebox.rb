@@ -30,7 +30,7 @@ def play(songs)
   if songs.any?(input) 
     puts "Playing #{input}"
   elsif input.to_i > 0 && input.to_i < songs.length
-    puts "#{songs[input.to_i - 1]}"
+    puts "Playing #{songs[input.to_i - 1]}"
   else
     puts "Invalid input, please try again"
   end
